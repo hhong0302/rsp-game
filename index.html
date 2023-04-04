@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보게임</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="gamenpc">
+            <img src="images/buu.jpg" alt="npc" id="npc">
+            <h1 id="playgame">가위바위보 한 판 하시죠</h1>
+        </div>
+        <div class="rps">
+            <div class="me" id="me">
+                <div class="meimg">
+                    <img src="images/paper.png" alt=""가위바위보>
+                </div>
+                <p id="mrps">보</p>
+                <p>나</p>
+            </div>
+            <div class="com" id="com">
+                <div class="comimg">
+                    <img src="images/rock.png" alt=""가위바위보>
+                </div>
+                <p id="crps">??</p>
+                <p>컴퓨터</p>
+            </div>
+        </div>
+        <div class="btnbox">
+            <img src="images/scissors.png" alt="scissors" id="scissors" onclick="rps(1), doc('scissors' , '가위')">
+            <img src="images/rock.png" alt="rock" onclick="rps(2), doc('rock' , '바위')">
+            <img src="images/paper.png" alt="paper" onclick="rps(3), doc('paper' , '보')">
+            <h1 class="tt">선택하세요.</h1>
+        </div>
+
+        <div class="winlosebox">
+            <h1>승률계산기</h1>
+            <div class="winlose overscr">
+                <div>
+                    <p class="ptext">로그</p>
+                    <p id="allnum">0</p>
+                </div>
+
+                <div>
+                    <p class="ptext">낸거</p>
+                    <p id="mynum">0</p>
+                </div>
+
+                <div>
+                    <p class="ptext">점수</p>
+                    <p id="myscore">0</p>
+                </div>
+                
+                <div>
+                    <p class="ptext">승률<br></p>
+                    <p id="winpercent">0</p>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
